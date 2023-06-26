@@ -10,6 +10,7 @@ export default function Navigation() {
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
        
         <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><Link to="/" className={`nav-link px-2 ${location.pathname === "/" ? "text-secondary" : "text-white"}`}>Resume</Link></li>
           <li><Link to="/search" className={`nav-link px-2 ${location.pathname === "/search" ? "text-secondary" : "text-white"}`}>Search</Link></li>
           <li><Link to="/table" className={`nav-link px-2 ${location.pathname === "/table" ? "text-secondary" : "text-white"}`}>Table</Link></li>          
           <li><Link to="/crud" className={`nav-link px-2 ${location.pathname === "/crud" ? "text-secondary" : "text-white"}`}>Crud</Link></li>          
