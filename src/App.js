@@ -4,7 +4,6 @@ import Navigation from './Compo/Navigation'
 import SearchEvent from './Compo/SearchEvent'
 import  Table  from './Compo/Table'
 import Crud from './Compo/Crud'
-import Resume from './Compo/Resume'
 
 export default function App() {
   return (
@@ -13,8 +12,7 @@ export default function App() {
 
       
     <Routes>
-       <Route path='/' element = {<Resume />}/>
-       <Route path='/search' element = {<SearchEvent />}/>
+       <Route path='/' element = {<SearchEvent />}/>
        <Route path='/table' element = {<Table />}/>
        <Route path='/crud' element = {<Crud />}/>
     </Routes>
